@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI & TailwindCss  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <header class="bg-[#15803D] shadow-sm">
+        <div class="navbar w-10/12 mx-auto ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="#">About</a></li>
+                        <li> <a href="#">Gallery</a></li>
+                        <li> <a href="#">Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <a class="font-bold text-1xl text-white md:text-2xl">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="gap-7 menu-horizontal px-1 ">
+                    <li><a href="#" class="hover:underline text-white font-semibold">About</a></li>
+                    <li> <a href="#" class="hover:underline text-white font-semibold">Gallery</a></li>
+                    <li> <a href="#" class="hover:underline text-white font-semibold">Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#FACC15] text-[#15803D] rounded-4xl hover:font-semibold hover:text-white">Plant a
+                    Tree</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-[#CFF0DC]">
+
+        <div class="flex justify-around items-center space-x-5">
+           <div class="flex-1 hidden md:block"> <img src="assets/hero-leaf1.png" alt=""></div>
+
+            <div class="flex-1 text-center space-y-5">
+                <h1 class="text-[#1F2937] text-2xl md:text-3xl font-semibold mt-4 md:mt-0">Plant a Tree, Grow a Future</h1>
+                <p class="text-[#1F2937]">Join our mission to plant 1 million trees and make the Earth greener for future
+                    generations.</p>
+
+                       <button class="btn bg-[#FACC15] text-[#15803D] rounded-4xl hover:font-semibold hover:text-white mb-4 md:mb-0">Get Involved</button>
+            </div>
+           <div class="hidden md:block flex-1"> <img src="assets/hero-leaf2.png" alt=""></div>
+        </div>
+
+
+
+    </section>
+
+    <section class="w-7/12 mx-auto mt-24">
+        <h1 class="text-[#1F2937] text-2xl md:text-4xl font-semibold text-center">About the Campaign</h1>
+
+        <div class="flex items-center space-x-10 mt-14 md:flex-row flex-col">
+            <img src="assets/about.png" alt="" class="h-[430px] W-[430px]">
+            <div class="space-y-5 mt-10 md:mt-0">
+                <p class="text-[#1F2937]">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+
+                <ul class="text-[#1F2937] list-disc">
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
 </body>
+
 </html>
