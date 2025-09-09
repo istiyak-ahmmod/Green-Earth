@@ -1,169 +1,44 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
-
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
-
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
-
----
-# Green Earth
-
-
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
-
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
-
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
-
-
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
-
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
-
-
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
-
-
-
-
-## ✅ Main Requirements 
-
-#### 1) Navbar
-
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
-
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
-
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
-
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
-
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
-
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
+ 
 
 ---
 #### 7) Create a README file to answer the following question-
 
 
 #### 1) What is the difference between var, let, and const?
+Answer : var : পুরনো (আগে থেকে ব্যবহৃত হয়)। একই নামের variable একাধিকবার declare করা যায় । Function scope বা global scope এ কাজ করে। Hoisting হয় (উপরে উঠে যায়), মানে declare এর আগেও ব্যবহার করলে undefined দেখায়। 
+
+let : নতুন ES6 এ এসেছে। এটা block scope (মানে { } এর ভেতরে কাজ করে)। একই নাম দিয়ে আবার redeclare করা যায় না, তবে value change করা যায়।
+
+const : এটাও ES6 থেকে এসেছে। Block scope এ কাজ করে।
+একবার value assign করলে সেটা আর change করা যায় না।
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
+Answer : map(), forEach() আর filter() array এর উপর loop চালানোর জন্য ব্যবহার হয়। তবে কাজ আলাদা:
 
+map() : প্রতিটি item এর উপর কাজ করে এবং কাজের ফলাফল নিয়ে একটি নতুন array return করে।
+
+forEach() : শুধু array এর প্রতিটি item এর উপর loop চালায়। নতুন কোনো array return করে না।
+
+filter() : শর্ত চেক করে, যে item গুলো শর্ত পূরণ করে সেগুলো নিয়ে একটি নতুন array return করে।
 #### 3) What are arrow functions in ES6?
-
+Answer : Arrow function হলো ES6 এ আসা নতুন ফাংশন লেখার শর্টকাট। এতে function কীওয়ার্ড লিখতে হয় না, শুধু => ব্যবহার করে ফাংশন লেখা হয়। কোড ছোট ও clean হয়।
 #### 4) How does destructuring assignment work in ES6?
+Answer : Destructuring assignment হলো ES6 এর একটি ফিচার। এর মাধ্যমে array বা object থেকে value আলাদা করে সহজে variable এ নিতে পারি।
+Array destructuring: 
 
+const numbers = [15, 25, 30];
+const [a, b, c] = numbers;  
+a = 15, b = 25, c = 30
+
+Object destructuring:
+
+const user = { name: "istiyak", age: 20 };
+const { name, age } = user;  
+name = "istiyak", age = 20
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
 
-## ⚙️ Functionalities 
+Answer : Template literals হলো ES6 এর নতুন পদ্ধতি string তৈরি করার জন্য। এতে backtick ‌‌‌‌‌‌‌ব্যবহার হয় এবং variable বা expression সরাসরি ${} এর ভিতরে বসানো যায়।
 
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
+String concatenation এ অনেক + ব্যবহার করে করতে হয় ।
 
 
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
