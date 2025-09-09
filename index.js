@@ -153,7 +153,7 @@ const loadingCatagory = (statas) => {
     loading.classList.add("hidden")
   }
 }
-// loadCategory(true);
+
 
 loadCategory();
 loadAllPlants();
